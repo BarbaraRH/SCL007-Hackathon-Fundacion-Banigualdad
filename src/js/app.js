@@ -13,7 +13,7 @@ const saveBusiness = (/* businessImage, */ businessName, businessDescription, bu
   /* let */ newBusinessKey = firebase.database().ref('business/boasfdisfbsfahb').child('products').push().key;
   console.log(newBusinessKey);
   firebase.database().ref('business/' + newBusinessKey).set({
-    /* image: businessImage, */
+    image: imgUrl,
     owner: businessName,
     description: businessDescription,
     key: newBusinessKey,
