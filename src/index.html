@@ -13,42 +13,23 @@
 
 <body>
 
-  <!-- importante poner sus scripts al final del archivo -->
 
-  <div id="page3" class="container">
+  <input type="text" id="searchInput">
+  <button id="searchButton" class="btn btn-success mt-3 mb-3" type="submit">submit</button>
 
-    <form id="enter-login" class="container-fluid2">
-      <div id="app1">
-        <p>Nombre</p>
-        <input id="name" type="text">
-        <p>Description</p>
-        <textarea id="description" name="description" cols="30" rows="10"></textarea>
-        <p>Categoría</p>
-        <input id="category" type="text">
-        <p>Whatsapp</p>
-        <input id="phone" type="text">
-        <p>Ciudad</p>
-        <input id="city" type="text">
-      </div>
-      <div class="form upload">
-        <p id="app4">Imagen</p>
-        <progress value="0" max="100" id="uploader">0%</progress><br>
-        <br> <input type="file" value="upload" id="fileButton" name="elegir archivo" /></br>
-        <button id="sendBusiness">Submit</button>
-      </div>
-    </form>
-  </div>
+
+  <div id="searchResult"></div>
 
   <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
   <script>
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyCj4ZGbVkd1A6bfbPBnyh2yOr3sr8ZLbsw",
-      authDomain: "pruebabanigualdad.firebaseapp.com",
-      databaseURL: "https://pruebabanigualdad.firebaseio.com",
-      projectId: "pruebabanigualdad",
-      storageBucket: "pruebabanigualdad.appspot.com",
-      messagingSenderId: "471626189945"
+      apiKey: "AIzaSyBLGm3s32hKDjA_djFU_tPWSsd9Xk7xJ7E",
+      authDomain: "banigualdad-801b1.firebaseapp.com",
+      databaseURL: "https://banigualdad-801b1.firebaseio.com",
+      projectId: "banigualdad-801b1",
+      storageBucket: "banigualdad-801b1.appspot.com",
+      messagingSenderId: "393954630663"
     };
     firebase.initializeApp(config);
   </script>
